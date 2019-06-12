@@ -1,0 +1,43 @@
+@import '_variables'
+@import '../../../../node_modules/bootstrap/scss/bootstrap'
+
+.bg-black
+  background-color: $black
+
+.navbar
+  .navbar-brand
+    letter-spacing: -0.025em
+
+  .nav-item
+    @include media-breakpoint-up(lg)
+      &:before
+        content: '•'
+        color: $secondary
+        padding: 0 $nav-link-padding-x / 2
+
+      &:first-of-type:before
+        content: ''
+
+  .nav-link
+    display: inline-block
+
+.particles-js-canvas-el
+  background: $black
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+
+#splash
+  .container
+    z-index: 2
+
+.jumbotron-divider
+  background: $primary
+  border: 0.3rem solid $primary
+
+.bg-lines-light
+  background-image: url('/img/line-bg.png')
+
+.bg-hex-primary
+  background-image: url('/img/hex-bg.png')

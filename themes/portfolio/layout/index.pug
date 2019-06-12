@@ -1,0 +1,62 @@
+extends containers/base
+
+mixin titleAndBlurb(title, blurb)
+  .mb-5.pb-md-5
+    .row
+      .col-10.offset-1.text-center
+        h2.display-3.mb-5= title
+    .row
+      .col-10.offset-1.col-lg-8.offset-lg-2.text-center
+        p.h4.m-0= blurb
+
+block content
+  - const data = site.data.index
+  - data.skills.list.sort()
+
+  section#splash.jumbotron.bg-transparent.rounded-0.px-0.py-5.m-0.text-white.position-relative
+    .container.py-md-5.text-center
+      .row
+        .col-lg-10.offset-lg-1
+          h1.display-1.mb-3.mb-sm-5.pb-md-5= data.hero.title
+      .row
+        .col-4.offset-4.mb-3.mb-sm-5.pb-md-5
+          hr.jumbotron-divider
+      .row
+        .col-lg-8.offset-lg-2
+          .h3.font-weight-light.m-0= data.hero.blurb
+
+  section.bg-light.bg-lines-light.py-3.py-md-5
+    .container.py-5
+      +titleAndBlurb(data.steps.title, data.steps.blurb)
+      .row
+        each block in data.steps.blocks
+          .col-lg-4.mb-4.mb-lg-0
+            .card.p-3.shadow-sm.border-0.rounded-lg
+              .card-body.p-4
+                .h1.display-1.text-center.text-primary.font-weight-normal
+                  i(class=block.iconClass)
+                .h3.font-weight-bold.my-4.text-center= block.title
+                p.font-weight-light.mb-0= block.text
+                
+  section.bg-primary.bg-hex-primary.py-3.py-md-5.text-white
+    .container.py-5
+      +titleAndBlurb(data.skills.title, data.skills.blurb)
+      .row
+        .col
+          .h1.display-1.font-weight-normal.text-center.mb-5.pb-md-5
+            i.fab.fa-react
+            span.font-weight-light.mx-3.mx-md-5 +
+            i.fab.fa-node
+            span.font-weight-light.mx-3.mx-md-5 +
+            i.fas.fa-database
+      .row
+        .col-lg-8.offset-lg-2.mb-5
+          .card.shadow-lg.border-0.rounded-lg.text-center
+            .card-header.bg-black= data.skills.listTitle
+            .card-body.text-muted
+              each skill in data.skills.list
+                .badge.font-weight-normal.pr-2= skill
+      .row
+        .col-10.offset-1.col-lg-8.offset-lg-2.text-center
+          p.font-italic= data.skills.aside
+              

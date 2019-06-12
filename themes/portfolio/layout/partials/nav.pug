@@ -1,0 +1,18 @@
+nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border-dark
+  .container
+    a.navbar-brand.font-weight-bold(href='/')
+      strong= site.data.nav.brand
+    button.navbar-toggler(
+      type='button'
+      data-toggle='collapse'
+      data-target='#navbar-content'
+      aria-controls='navbar-content'
+      aria-expanded='false'
+      aria-label='Toggle navigation'
+    )
+      span.navbar-toggler-icon
+    #navbar-content.navbar-collapse.collapse
+      ul.navbar-nav.ml-auto
+        each item in site.data.nav.links
+          li.nav-item
+            a.nav-link(href=item.link)= item.label
