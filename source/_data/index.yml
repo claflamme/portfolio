@@ -76,3 +76,10 @@ skills:
     - Webpack
     - Browserify
     - HTML5
+
+contact:
+  title: Let's make some stuff.
+  blurb:
+    If you've got a team or project that needs a senior developer,
+    let me hear about it!
+  button: Get in touch

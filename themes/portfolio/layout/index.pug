@@ -6,7 +6,7 @@ mixin titleAndBlurb(title, blurb)
       .col-10.offset-1.text-center
         h2.display-3.mb-5= title
     .row
-      .col-10.offset-1.col-lg-8.offset-lg-2.text-center
+      .col-lg-8.offset-lg-2.text-center
         p.h4.m-0= blurb
 
 block content
@@ -24,7 +24,6 @@ block content
       .row
         .col-lg-8.offset-lg-2
           .h3.font-weight-light.m-0= data.hero.blurb
-
   section.bg-light.bg-lines-light.py-3.py-md-5
     .container.py-5
       +titleAndBlurb(data.steps.title, data.steps.blurb)
@@ -59,4 +58,11 @@ block content
       .row
         .col-10.offset-1.col-lg-8.offset-lg-2.text-center
           p.font-italic= data.skills.aside
+          
+  section.bg-black.bg-prism-dark.py-3.py-md-5.text-white
+    .container.py-5
+      +titleAndBlurb(data.contact.title, data.contact.blurb)
+      .row
+        .col.text-center
+          a.btn.btn-lg.btn-outline-light.mx-2(href='/contact')= data.contact.button
               
