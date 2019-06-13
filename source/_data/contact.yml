@@ -1,0 +1,13 @@
+entries:
+  -
+    label: me@corylaflamme.com
+    href: mailto:me@corylaflamme.com?subject=Hey, nice website
+    class: fas fa-envelope
+  -
+    label: corylaflamme
+    href: https://www.linkedin.com/in/corylaflamme/
+    class: fab fa-linkedin
+  -
+    label: claflamme
+    href: https://github.com/claflamme
+    class: fab fa-github

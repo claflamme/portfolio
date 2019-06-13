@@ -1,0 +1,21 @@
+extends containers/base
+
+block vars
+  -
+    const bodyClass = 'bg-light bg-lines-light';
+
+block content
+  section.py-5.text-center
+    .container
+      .row
+        .col
+          h1.display-3.mb-5 Contact
+      .row
+        .col-lg-4.offset-lg-4
+          .card.border-0.rounded-lg.shadow-lg
+            .list-group.list-group-flush.text-left
+              each entry in site.data.contact.entries
+                a.list-group-item.list-group-item-action.p-md-4.border-light(href=entry.href target='_blank')
+                  i.fa-fw.text-dark.align-middle.h4.font-weight-bold.mr-3.mb-0(class=entry.class)
+                  = entry.label
+                
