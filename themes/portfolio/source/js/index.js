@@ -3,5 +3,5 @@
 
   var sr = ScrollReveal();
 
-  sr.reveal('.reveal', { distance: '35px', duration: 500, interval: 200, viewFactor: 0.1 });
+  sr.reveal('.reveal', { distance: '35px', duration: 750, interval: 200, viewFactor: 0.1 });
 })();
