@@ -3,13 +3,17 @@ extends containers/base
 mixin titleAndBlurb(title, blurb)
   .mb-5.pb-md-5
     .row
-      .col-10.offset-1.text-center
+      .col-10.offset-1.text-center.reveal
         h2.display-3.mb-5= title
     .row
-      .col-lg-8.offset-lg-2.text-center
+      .col-lg-8.offset-lg-2.text-center.reveal
         p.h4.m-0= blurb
         
+block head
+  script(src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js")
+        
 block scripts
+  script(src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js")
   != js(['js/vendor/particles.min.js'])
   != js(['js/index.js'])
 
@@ -21,13 +25,13 @@ block content
     .container.py-md-5.text-center
       .row
         .col-lg-10.offset-lg-1
-          h1.display-1.mb-3.mb-sm-5.pb-md-5= data.hero.title
+          h1.display-1.mb-3.mb-sm-5.pb-md-5.reveal= data.hero.title
       .row
         .col-4.offset-4.mb-3.mb-sm-5.pb-md-5
-          hr.jumbotron-divider
+          hr.jumbotron-divider.reveal
       .row
         .col-lg-8.offset-lg-2
-          .h3.font-weight-light.m-0= data.hero.blurb
+          .h3.font-weight-light.m-0.reveal= data.hero.blurb
           
   section.bg-light.bg-lines-light.py-3.py-md-5
     .container.py-5
@@ -35,7 +39,7 @@ block content
       .row
         each block in data.steps.blocks
           .col-lg-4.mb-4.mb-lg-0
-            .card.p-3.shadow-sm.border-0.rounded-lg
+            .card.p-3.shadow.border-0.rounded-lg.reveal
               .card-body.p-4
                 .h1.display-1.text-center.text-primary.font-weight-normal
                   i(class=block.iconClass)
@@ -47,7 +51,7 @@ block content
       +titleAndBlurb(data.skills.title, data.skills.blurb)
       .row
         .col
-          .h1.display-1.font-weight-normal.text-center.mb-5.pb-md-5
+          .h1.display-1.font-weight-normal.text-center.mb-5.pb-md-5.reveal
             i.fab.fa-react
             span.font-weight-light.mx-3.mx-md-5 +
             i.fab.fa-node
@@ -55,19 +59,19 @@ block content
             i.fas.fa-database
       .row
         .col-lg-8.offset-lg-2.mb-5
-          .card.shadow-lg.border-0.rounded-lg.text-center
+          .card.shadow-lg.border-0.rounded-lg.text-center.reveal
             .card-header.bg-black= data.skills.listTitle
             .card-body.text-muted
               each skill in data.skills.list
                 .badge.font-weight-normal.pr-2= skill
       .row
-        .col-10.offset-1.col-lg-8.offset-lg-2.text-center
+        .col-10.offset-1.col-lg-8.offset-lg-2.text-center.reveal
           p.font-italic= data.skills.aside
           
   section.bg-black.bg-prism-dark.py-3.py-md-5.text-white
     .container.py-5
       +titleAndBlurb(data.contact.title, data.contact.blurb)
       .row
-        .col.text-center
+        .col.text-center.reveal
           a.btn.btn-lg.btn-outline-light.mx-2(href='/contact')= data.contact.button
               
