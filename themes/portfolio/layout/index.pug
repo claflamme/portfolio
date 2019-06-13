@@ -8,6 +8,10 @@ mixin titleAndBlurb(title, blurb)
     .row
       .col-lg-8.offset-lg-2.text-center
         p.h4.m-0= blurb
+        
+block scripts
+  != js(['js/vendor/particles.min.js'])
+  != js(['js/index.js'])
 
 block content
   - const data = site.data.index

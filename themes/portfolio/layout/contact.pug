@@ -1,8 +1,7 @@
 extends containers/base
 
 block vars
-  -
-    const bodyClass = 'bg-light bg-lines-light';
+  - const bodyClass = 'bg-light bg-lines-light';
 
 block content
   section.py-5.text-center
@@ -18,4 +17,3 @@ block content
                 a.list-group-item.list-group-item-action.p-md-4.border-light(href=entry.href target='_blank')
                   i.fa-fw.text-dark.align-middle.h4.font-weight-bold.mr-3.mb-0(class=entry.class)
                   = entry.label
-                
