@@ -9,14 +9,15 @@ block scripts
   != js(['js/resume.js'])
 
 block content
-  section.py-5.text-center
-    .container
-      .row
-        .col-lg-6.offset-lg-3
-          h1.display-3.m-0 Résumé
-          a.btn.btn-lg.btn-primary.text-white.my-5(href='/Cory%20LaFlamme%20-%20Resume.pdf' target='_blank')
-            | Download as PDF
-            i.fas.fa-file-pdf.ml-3
-      .row
-        .col-lg-8.offset-lg-2
-          canvas#resume-canvas.resume-canvas.shadow-lg
+  main(role='main')
+    section.py-5.text-center
+      .container
+        .row
+          .col-lg-6.offset-lg-3
+            h1.display-3.m-0 Résumé
+            a.btn.btn-lg.btn-primary.text-white.my-5(href='/Cory%20LaFlamme%20-%20Resume.pdf' target='_blank')
+              | Download as PDF
+              i.fas.fa-file-pdf.ml-3
+        .row
+          .col-lg-8.offset-lg-2
+            canvas#resume-canvas.resume-canvas.shadow-lg
