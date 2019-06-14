@@ -29,12 +29,12 @@ block content
         const isFlipped = i % 2 === 0;
         
       section.py-5(class=sectionStyle.sectionClass)
-        .container.py-md-5.reveal
+        .container.py-md-5
           .row
-            .col-lg-7(class=isFlipped ? 'order-lg-last' : null)
+            .col-lg-7.reveal(class=isFlipped ? 'order-lg-last' : null)
               a(href=project.href target='_blank')
                 img.w-100.rounded.shadow-lg.mb-4.mb-lg-0(src=project.img alt=project.alt)
-            .col-lg-5(class=isFlipped ? 'order-lg-first pr-xl-5' : 'pl-xl-5')
+            .col-lg-5.reveal(class=isFlipped ? 'order-lg-first pr-xl-5' : 'pl-xl-5')
               h2.display-4.m-0= project.title
               .row
                 .col-4
