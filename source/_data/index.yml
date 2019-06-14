@@ -33,7 +33,7 @@ steps:
         of moving parts.
 
 skills:
-  title: Skills to pay the bills.
+  title: The latest and greatest.
   blurb:
     I specialize in React, Node.js, and MongoDB—the leading technologies for
     modern web projects.
@@ -78,7 +78,7 @@ skills:
     - HTML5
 
 contact:
-  title: Let's make some stuff.
+  title: Let's write some code.
   blurb:
     If you've got a team or project that needs a senior developer,
     let me know!

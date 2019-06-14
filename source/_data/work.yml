@@ -1,0 +1,107 @@
+hero:
+  title: Work
+  blurb:
+    Some of my more recent work, ranging from full-blown
+    enterprise CMS builds to one-off marketing sites.
+
+sectionStyles:
+  -
+    sectionClass: bg-dark bg-prism-dark text-white
+    buttonClass: btn-light
+    dividerClass: border-primary
+  -
+    sectionClass: bg-primary bg-hex-primary text-white
+    buttonClass: btn-light
+    dividerClass: border-white
+  -
+    sectionClass: bg-light bg-lines-light
+    buttonClass: btn-primary text-white
+    dividerClass: border-primary
+
+projects:
+  -
+    title: TELUS Business
+    img: "/img/projects/telus.jpg"
+    alt: Image of TELUS Business website.
+    href: "https://www.telus.com/business"
+    blurb:
+      Part of a comprehensive rework of TELUS web properties, beginning with
+      business offerings. Built primarily in Rails, with React modules
+      for interactive content.
+    tech:
+      - Rails
+      - React
+      - HAML
+      - SASS/SCSS
+      - Bootstrap
+  -
+    title: Good Times Outside by MEC
+    img: "/img/projects/mec.jpg"
+    alt: Image of Good Times Outside website.
+    href: "https://gto.mec.ca"
+    blurb:
+      Promotional website for Mountain Equipment Co-op (MEC) showcasing outdoor
+      activities in Canadian cities. Built as a single-page Node.js application
+      that loads data from a headless content management system.
+    tech:
+      - Node.js
+      - React
+      - Redux
+      - SASS/SCSS
+      - Bootstrap
+      - Wordpress
+  -
+    title: CES
+    img: "/img/projects/ces.jpg"
+    alt: Image of CES website.
+    href: "https://ces.tech"
+    blurb:
+      Complete rework of the website for CES, the world famous yearly trade
+      show for consumer electronics. Developed using a static site generator for
+      rapid prototyping with pages then being converted to CMS templates.
+    tech:
+      - Node.js
+      - Hexo
+      - SASS/SCSS
+      - Bootstrap
+      - Kentico
+  -
+    title: Merck Group
+    img: "/img/projects/merck.jpg"
+    alt: Image of Merck Group website.
+    href: "https://www.merckgroup.com/"
+    blurb:
+      Global website for pharmaceutical giant Merck. Built by a multinational
+      dev team using a static site generator for template development backed
+      by AEM for content management.
+    tech:
+      - Node.js
+      - SASS/SCSS
+      - Bootstrap
+      - AEM
+  -
+    title: Syntropy
+    img: "/img/projects/syntropy.jpg"
+    alt: Image of Syntropy website.
+    href: "https://www.syntropy.com/"
+    blurb:
+      A small marketing site for a joint venture between Merck and Palantir.
+      Developed using a static site generator.
+    tech:
+      - Node.js
+      - Hexo
+      - SASS/SCSS
+      - Bootstrap
+      - Vivus
+  -
+    title: Pizza Pizza
+    img: "/img/projects/pizzapizza.jpg"
+    alt: Image of Pizza Pizza website.
+    href: "https://pizzapizza.ca"
+    blurb:
+      I wouldn't normally keep a project this old on my website, but everyone
+      always gets such a kick out of this one. Though I was <strong>not part of
+      the design process</strong>, I was on the dev team from day one. Its
+      construction predates nearly every modern web framework.
+    tech:
+      - A whole lotta jQuery

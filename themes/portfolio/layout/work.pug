@@ -1,0 +1,50 @@
+extends containers/base
+
+block head
+  // Inlined to prevent a blocking script in the head
+  script
+    include ../source/js/vendor/scrollreveal.min.js
+
+block scripts
+  != js(['js/work.js'])
+
+block vars
+  - const bodyClass = 'bg-light bg-lines-light';
+
+block content
+  -
+    const data = site.data.work;
+  
+  header.py-5.text-center(role='banner')
+    .container.py-md-5
+      .row
+        .col-12
+          h1.display-3.mb-5= data.hero.title
+        .col-lg-8.offset-lg-2.text-center
+          p.h4.m-0= data.hero.blurb
+  main(role='main')
+    each project, i in data.projects
+      -
+        const sectionStyle = data.sectionStyles[i % data.sectionStyles.length];
+        const isFlipped = i % 2 === 0;
+        
+      section.py-5(class=sectionStyle.sectionClass)
+        .container.py-md-5
+          .row
+            .col-lg-7(class=isFlipped ? 'order-lg-last project-reveal-right' : 'project-reveal-left')
+              a(href=project.href target='_blank')
+                img.w-100.rounded.shadow-lg.mb-4.mb-lg-0(src=project.img alt=project.alt)
+            .col-lg-5(class=isFlipped ? 'order-lg-first project-reveal-left pr-xl-5' : 'project-reveal-right pl-xl-5')
+              h2.display-4.m-0= project.title
+              .row
+                .col-4
+                  hr.jumbotron-divider.my-4(class=sectionStyle.dividerClass)
+              p.mb-4!= project.blurb
+              if project.tech
+                strong Key Technologies
+                p.mb-4
+                  em
+                    small=project.tech.join(', ')
+              a.btn(href=project.href target='_blank' class=sectionStyle.buttonClass)
+                | View on the web
+                i.fas.fa-external-link-alt.ml-3
