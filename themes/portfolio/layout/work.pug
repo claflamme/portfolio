@@ -29,23 +29,22 @@ block content
         const isFlipped = i % 2 === 0;
         
       section.py-5(class=sectionStyle.sectionClass)
-        .container.py-md-5
+        .container.py-md-5.reveal
           .row
-            .col-lg-7.reveal(class=isFlipped ? 'order-lg-last' : null)
+            .col-lg-7(class=isFlipped ? 'order-lg-last' : null)
               a(href=project.href target='_blank')
                 img.w-100.rounded.shadow-lg.mb-4.mb-lg-0(src=project.img alt=project.alt)
             .col-lg-5(class=isFlipped ? 'order-lg-first pr-xl-5' : 'pl-xl-5')
-              h2.display-4.m-0.reveal= project.title
+              h2.display-4.m-0= project.title
               .row
-                .col-4.reveal
+                .col-4
                   hr.jumbotron-divider.my-4(class=sectionStyle.dividerClass)
-              .reveal
-                p.mb-4!= project.blurb
-                if project.tech
-                  strong Key Technologies
-                  p.mb-4
-                    em
-                      small=project.tech.join(', ')
-                a.btn(href=project.href target='_blank' class=sectionStyle.buttonClass)
-                  | View on the web
-                  i.fas.fa-external-link-alt.ml-3
+              p.mb-4!= project.blurb
+              if project.tech
+                strong Key Technologies
+                p.mb-4
+                  em
+                    small=project.tech.join(', ')
+              a.btn(href=project.href target='_blank' class=sectionStyle.buttonClass)
+                | View on the web
+                i.fas.fa-external-link-alt.ml-3
