@@ -8,6 +8,6 @@
     mobile: false,
   };
 
-  sr.reveal('.project-reveal-left', Object.assign({}, options, { origin: 'left' }));
-  sr.reveal('.project-reveal-right', Object.assign({}, options, { origin: 'right' }));
+  sr.reveal('.project-reveal-left', $.extend({}, options, { origin: 'left' }));
+  sr.reveal('.project-reveal-right', $.extend({}, options, { origin: 'right' }));
 })();
