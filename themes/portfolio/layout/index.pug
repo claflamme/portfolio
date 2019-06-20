@@ -32,7 +32,8 @@ block content
           hr.jumbotron-divider.reveal
       .row
         .col-lg-8.offset-lg-2
-          .h3.font-weight-light.m-0.reveal= data.hero.blurb
+          .h3.font-weight-light.mb-3.mb-5.pb-md-5.reveal= data.hero.blurb
+          a.btn.btn-lg.btn-outline-light.reveal(href='/work')= data.hero.workLink
   main(role='main')
     section.bg-light.bg-lines-light.py-3.py-md-5
       .container.py-5
