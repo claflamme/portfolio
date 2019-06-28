@@ -33,7 +33,9 @@ block content
       .row
         .col-lg-8.offset-lg-2
           .h3.font-weight-light.mb-3.mb-5.pb-md-5.reveal= data.hero.blurb
-          a.btn.btn-lg.btn-outline-light.reveal(href='/work')= data.hero.workLink
+          a.btn.btn-lg.btn-outline-light.reveal(href='/work')
+            = data.hero.workLink
+            i.fas.fa-arrow-right.ml-3
   main(role='main')
     section.bg-light.bg-lines-light.py-3.py-md-5
       .container.py-5
@@ -75,5 +77,7 @@ block content
         +titleAndBlurb(data.contact.title, data.contact.blurb)
         .row
           .col.text-center.reveal
-            a.btn.btn-lg.btn-outline-light.mx-2(href='/contact')= data.contact.button
+            a.btn.btn-lg.btn-outline-light.mx-2(href='/contact')
+              = data.contact.button
+              i.fas.fa-arrow-right.ml-3
               
