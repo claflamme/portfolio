@@ -32,7 +32,7 @@ block content
         .container.py-md-5
           .row
             .col-lg-7.reveal(class=isFlipped ? 'order-lg-last' : null)
-              a(href=project.href target='_blank')
+              a(href=project.href target='_blank' tabindex='-1')
                 img.w-100.rounded.shadow-lg.mb-4.mb-lg-0(src=project.img alt=project.alt)
             .col-lg-5.reveal(class=isFlipped ? 'order-lg-first pr-xl-5' : 'pl-xl-5')
               h2.display-4.m-0= project.title

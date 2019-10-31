@@ -1,32 +1,39 @@
 hero:
   title: Work
-  blurb:
-    Some of my more recent work, ranging from full-blown
+  blurb: Some of my more recent work, ranging from full-blown
     enterprise CMS builds to one-off marketing sites.
 
 sectionStyles:
-  -
-    sectionClass: bg-dark bg-prism-dark text-white
+  - sectionClass: bg-dark bg-prism-dark text-white
     buttonClass: btn-light
     dividerClass: border-primary
-  -
-    sectionClass: bg-primary bg-hex-primary text-white
+  - sectionClass: bg-primary bg-hex-primary text-white
     buttonClass: btn-light
     dividerClass: border-white
-  -
-    sectionClass: bg-light bg-lines-light
+  - sectionClass: bg-light bg-lines-light
     buttonClass: btn-primary text-white
     dividerClass: border-primary
 
 projects:
-  -
-    title: TELUS Business
+  - title: Willis Towers Watson
+    img: "/img/projects/wtw.jpg"
+    alt: Image of Willis Towers Watson Business website.
+    href: "https://willistowerswatson.com/"
+    blurb:
+      Rebuild of the main marketing and information website for Willis Towers
+      Watson.
+    tech:
+      - .NET Core/ASP.NET
+      - Razor
+      - SASS/SCSS
+      - Bootstrap
+  - title: TELUS Business
     img: "/img/projects/telus.jpg"
     alt: Image of TELUS Business website.
     href: "https://www.telus.com/business"
     blurb:
       Part of a comprehensive rework of TELUS web properties, beginning with
-      business offerings. Built primarily in Rails, with React modules
+      business offerings. Built on top of Rails, with React modules
       for interactive content.
     tech:
       - Rails
@@ -34,15 +41,14 @@ projects:
       - HAML
       - SASS/SCSS
       - Bootstrap
-  -
-    title: Good Times Outside by MEC
+  - title: Good Times Outside by MEC
     img: "/img/projects/mec.jpg"
     alt: Image of Good Times Outside website.
     href: "https://gto.mec.ca"
     blurb:
       Promotional website for Mountain Equipment Co-op (MEC) showcasing outdoor
-      activities in Canadian cities. Built as a single-page Node.js application
-      that loads data from a headless content management system.
+      activities in Canadian cities. Built as a single-page React + Node.js
+      application that loads data from a headless content management system.
     tech:
       - Node.js
       - React
@@ -50,23 +56,20 @@ projects:
       - SASS/SCSS
       - Bootstrap
       - Wordpress
-  -
-    title: CES
+  - title: CES
     img: "/img/projects/ces.jpg"
     alt: Image of CES website.
     href: "https://ces.tech"
-    blurb:
-      Complete rework of the website for CES, the world famous yearly trade
+    blurb: Complete rework of the website for CES, the world famous yearly trade
       show for consumer electronics. Developed using a static site generator for
-      rapid prototyping with pages then being converted to CMS templates.
+      rapid prototyping, with pages then being converted to CMS templates.
     tech:
       - Node.js
       - Hexo
       - SASS/SCSS
       - Bootstrap
       - Kentico
-  -
-    title: Merck Group
+  - title: Merck Group
     img: "/img/projects/merck.jpg"
     alt: Image of Merck Group website.
     href: "https://www.merckgroup.com/"
@@ -76,11 +79,11 @@ projects:
       by AEM for content management.
     tech:
       - Node.js
+      - React
       - SASS/SCSS
       - Bootstrap
       - AEM
-  -
-    title: Syntropy
+  - title: Syntropy
     img: "/img/projects/syntropy.jpg"
     alt: Image of Syntropy website.
     href: "https://www.syntropy.com/"
@@ -93,8 +96,7 @@ projects:
       - SASS/SCSS
       - Bootstrap
       - Vivus
-  -
-    title: Pizza Pizza
+  - title: Pizza Pizza
     img: "/img/projects/pizzapizza.jpg"
     alt: Image of Pizza Pizza website.
     href: "https://pizzapizza.ca"
