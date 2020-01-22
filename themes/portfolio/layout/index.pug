@@ -9,11 +9,6 @@ mixin titleAndBlurb(title, blurb)
       .col-lg-8.offset-lg-2.text-center.reveal
         p.h4.m-0= blurb
         
-block head
-  // Inlined to prevent a blocking script in the head
-  script
-    include ../source/js/vendor/scrollreveal.min.js
-        
 block scripts
   != js(['js/vendor/particles.min.js'])
   != js(['js/index.js'])

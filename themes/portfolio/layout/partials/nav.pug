@@ -26,6 +26,7 @@ nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border
           i.fas.fa-times.text-white(aria-hidden='true')
       .modal-body.position-absolute.d-flex.align-items-center.h-100.w-100.text-center.display-2
         ul.navbar-nav.w-100
-          each item in site.data.nav.links
-            li.nav-item
+          - const links = [{label: 'Home', link: '/'}, ...site.data.nav.links]
+          each item in links
+            li.nav-item.reveal
               a.nav-link.py-3.text-white(href=item.link)= item.label

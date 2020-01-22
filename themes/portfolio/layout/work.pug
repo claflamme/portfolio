@@ -1,10 +1,5 @@
 extends containers/base
 
-block head
-  // Inlined to prevent a blocking script in the head
-  script
-    include ../source/js/vendor/scrollreveal.min.js
-
 block scripts
   != js(['js/work.js'])
 
