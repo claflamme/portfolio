@@ -5,15 +5,27 @@ nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border
       strong= site.data.nav.brand
     button.d-lg-none.collapsed.bg-transparent.border-0.text-white.h1.m-0(
       type='button'
-      data-toggle='collapse'
-      data-target='#navbar-content'
-      aria-controls='navbar-content'
-      aria-expanded='false'
+      data-toggle='modal'
+      data-target='#mobile-nav-content'
+      aria-controls='mobile-nav-content'
       aria-label='Toggle navigation'
     )
       i.fas.fa-bars
-    #navbar-content.navbar-collapse.collapse
+    //- Desktop
+    .navbar-collapse.collapse
       ul.navbar-nav.ml-auto
         each item in site.data.nav.links
           li.nav-item
             a.nav-link(href=item.link)= item.label
+//- Mobile
+#mobile-nav-content.modal.fade.p-0(tabindex='-1' role='dialog' aria-label='Navigation' aria-hidden='true')
+  .modal-dialog.h-100.mw-100.m-0(role='document')
+    .modal-content.h-100.bg-black.border-0.rounded-0
+      .modal-header.text-right.border-0
+        button.nav-close.bg-transparent.border-0.m-0.ml-auto.h1(type='button' data-dismiss='modal' aria-label='Close Navigation')
+          i.fas.fa-times.text-white(aria-hidden='true')
+      .modal-body.position-absolute.d-flex.align-items-center.h-100.w-100.text-center.display-2
+        ul.navbar-nav.w-100
+          each item in site.data.nav.links
+            li.nav-item
+              a.nav-link.py-3.text-white(href=item.link)= item.label
