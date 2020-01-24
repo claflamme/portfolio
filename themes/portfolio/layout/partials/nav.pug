@@ -3,14 +3,14 @@ nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border
     a.sr-only.sr-only-focusable.mr-4.px-3.py-2(href="#content") Skip to main content
     a.navbar-brand.font-weight-bold(href='/')
       strong= site.data.nav.brand
-    button.d-lg-none.collapsed.bg-transparent.border-0.text-white.h1.m-0(
+    button.btn.btn-outline-secondary.d-lg-none.h1.m-0.text-white(
       type='button'
       data-toggle='modal'
       data-target='#mobile-nav-content'
       aria-controls='mobile-nav-content'
       aria-label='Toggle navigation'
     )
-      i.fas.fa-bars
+      i.fas.fa-fw.fa-bars.p-0.m-0(style='line-height: 1;')
     //- Desktop
     .navbar-collapse.collapse
       ul.navbar-nav.ml-auto
@@ -18,12 +18,12 @@ nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border
           li.nav-item
             a.nav-link(href=item.link)= item.label
 //- Mobile
-#mobile-nav-content.modal.fade.p-0(tabindex='-1' role='dialog' aria-label='Navigation' aria-hidden='true')
+#mobile-nav-content.modal.p-0(tabindex='-1' role='dialog' aria-label='Navigation' aria-hidden='true')
   .modal-dialog.h-100.mw-100.m-0(role='document')
     .modal-content.h-100.bg-black.border-0.rounded-0
       .modal-header.text-right.border-0
-        button.nav-close.bg-transparent.border-0.m-0.ml-auto.h1(type='button' data-dismiss='modal' aria-label='Close Navigation')
-          i.fas.fa-times.text-white(aria-hidden='true')
+        button.nav-close.btn.btn-outline-secondary.text-white.ml-auto.h1(type='button' data-dismiss='modal' aria-label='Close Navigation')
+          i.fas.fa-fw.fa-times.text-white(aria-hidden='true')
       .modal-body.position-absolute.d-flex.align-items-center.h-100.w-100.text-center.display-2
         ul.navbar-nav.w-100
           - const links = [{label: 'Home', link: '/'}, ...site.data.nav.links]
