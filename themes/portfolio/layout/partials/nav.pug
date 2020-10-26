@@ -1,9 +1,9 @@
-nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border-dark
+nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark
   .container
     a.sr-only.sr-only-focusable.mr-4.px-3.py-2(href="#content") Skip to main content
     a.navbar-brand.font-weight-bold(href='/')
       strong= site.data.nav.brand
-    button.btn.btn-outline-secondary.d-lg-none.h1.m-0.text-white(
+    button.btn.btn-outline-dark.d-lg-none.h1.m-0.text-white.rounded-lg(
       type='button'
       data-toggle='modal'
       data-target='#mobile-nav-content'
@@ -22,7 +22,9 @@ nav.navbar.navbar-expand-lg.sticky-top.bg-black.navbar-dark.border-bottom.border
   .modal-dialog.h-100.mw-100.m-0(role='document')
     .modal-content.h-100.bg-black.border-0.rounded-0
       .modal-header.text-right.border-0
-        button.nav-close.btn.btn-outline-secondary.text-white.ml-auto.h1(type='button' data-dismiss='modal' aria-label='Close Navigation')
+        button.nav-close.btn.btn-outline-dark.text-white.ml-auto.h1(
+          type='button' data-dismiss='modal' aria-label='Close Navigation'
+        )
           i.fas.fa-fw.fa-times.text-white(aria-hidden='true')
       .modal-body.position-absolute.d-flex.align-items-center.h-100.w-100.text-center.display-2
         ul.navbar-nav.w-100

@@ -9,7 +9,7 @@ sectionStyles:
     dividerClass: border-primary
   - sectionClass: bg-primary bg-hex-primary text-white
     buttonClass: btn-light
-    dividerClass: border-white
+    dividerClass: border-white bg-white
   - sectionClass: bg-light bg-lines-light
     buttonClass: btn-primary text-white
     dividerClass: border-primary
