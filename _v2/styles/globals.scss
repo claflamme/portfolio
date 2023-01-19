@@ -1,0 +1,42 @@
+@import "bootstrap-customize";
+@import "~bootstrap/scss/bootstrap";
+
+.particles-js-canvas-el {
+  background: $black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.splash {
+  background: linear-gradient(transparent, rgba($white, 0.15));
+}
+
+.bg-lines {
+  background-image: url("/img/line-bg.png");
+}
+
+.bg-hexagons {
+  background-image: url("/img/hex-bg.png");
+}
+
+.bg-prisms {
+  background-image: url("/img/prism-bg.png");
+}
+
+.slant-start {
+  clip-path: polygon(0 map-get($spacers, 5), 0 100%, 100% 100%, 100% 0);
+  margin-top: map-get($spacers, 5) * -1;
+}
+
+.slant-end {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% map-get($spacers, 5));
+  margin-top: map-get($spacers, 5) * -1;
+}
+
+.navbar {
+  .navbar-brand {
+    letter-spacing: -0.025em;
+  }
+}

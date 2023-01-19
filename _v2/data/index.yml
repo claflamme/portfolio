@@ -1,0 +1,81 @@
+hero:
+  title: Programmer & problem solver.
+  blurb: >
+    For over ten years, I've been shipping web projects big and small—with
+    agencies, at product shops, and as a freelancer.
+  workLink: Check out my work
+
+steps:
+  title: Every step of the way.
+  blurb:
+    No matter the size or stage of the project, I've got something to bring to
+    the table.
+  blocks:
+    - iconClass: fas fa-clipboard-list
+      title: Design
+      text: >
+        Whether it's sketching component diagrams, mapping database schemata,
+        or planning stories and tasks, I make sure my projects are set up for
+        success from the start.
+    - iconClass: fas fa-code
+      title: Development
+      text: >
+        Front-end, back-end, and all the pieces in between. I've got extensive
+        experience with complex UI implementations,
+        scaleable web apps, and robust API services.
+    - iconClass: fas fa-cogs
+      title: Deployment
+      text: >
+        Caching, session management, load balancing, realtime pub/sub—I've
+        rigged up all kinds of production-grade systems with every combination
+        of moving parts.
+
+skills:
+  title: The latest and greatest.
+  blurb: >
+    I specialize in React and Node.js—the leading technologies for
+    modern web projects.
+  aside: I'm also a staunch advocate for accessibility on projects of all
+    sizes, with tons of experience implementing WCAG best practices.
+  listTitle: Plus the rest of my toolkit
+  list:
+    - JavaScript
+    - Node.js
+    - React
+    - CSS
+    - SASS/SCSS
+    - Stylus
+    - Express
+    - MongoDB
+    - PostgreSQL
+    - MySQL
+    - Redux
+    - Bootstrap
+    - EJS
+    - Electron
+    - Enzyme
+    - Foundation
+    - Git
+    - Heroku
+    - Hexo
+    - Jekyll
+    - Jest
+    - Metalsmith
+    - Next.js
+    - Jade/Pug
+    - React Native
+    - Wintersmith
+    - CoffeeScript
+    - Mongoose
+    - Sequelize
+    - Grunt
+    - Gulp
+    - Webpack
+    - Browserify
+    - HTML5
+
+contact:
+  title: Let's write some code.
+  blurb: If you've got a team or project that needs a senior developer,
+    let me know!
+  button: Get in touch

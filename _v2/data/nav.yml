@@ -1,0 +1,9 @@
+brand: Cory LaFlamme
+title: Site Navigation
+links:
+  - label: Work
+    href: /work
+  - label: Résumé
+    href: /resume
+  - label: Contact
+    href: /contact
