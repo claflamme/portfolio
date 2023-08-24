@@ -1,8 +1,8 @@
 hero:
   title: Programmer & problem solver.
   blurb:
-    For over ten years, I've been shipping web projects big and small—with
-    agencies, at product shops, and as a freelancer.
+    For fifteen years, I've been shipping web projects big and small—with
+    agencies, in-house, and as a freelancer.
   workLink: Check out my work
 
 steps:
@@ -36,7 +36,7 @@ steps:
 skills:
   title: The latest and greatest.
   blurb:
-    I specialize in React, Node.js, and MongoDB—the leading technologies for
+    I specialize in React and Node.js—the leading technologies for
     modern web projects.
   aside:
     I'm also a staunch advocate for accessibility on projects of all
